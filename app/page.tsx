@@ -1,113 +1,157 @@
-import Image from 'next/image'
+//"use client";
+import Link from "next/link";
+import Image from "next/image";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+export default async function Home() {
+	return (
+		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-6xl'>
+			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:flex-row lg:px-4'>
+				<div className='text-center'>
+					<h1 className='pb-4 text-center  text-4xl md:text-7xl'>
+						BEAUTIFUL MOMENTS ARE EVERYTHING
+					</h1>
+					<div className='flex flex-col items-center justify-between gap-8 md:flex-row'>
+						<div className='flex w-full flex-1 items-center justify-center'>
+							<div className='w-full'>
+								<Link href={"/portraits"}>
+									<Image
+										alt='Portrait of a girl'
+										className='h-96 w-full object-cover'
+										src={
+											"https://d2kukao61u3x53.cloudfront.net/home-hero/portraits.jpg"
+										}
+										width={500}
+										height={500}
+									/>
+									<h1 className='py-6 text-xl'>Portraits</h1>
+								</Link>
+							</div>
+						</div>
+						<div className='flex  w-full flex-1 items-center justify-center'>
+							<div className='w-full'>
+								<Link href={"/headshots"}>
+									<Image
+										alt='Headshot of a man'
+										className='h-96 w-full object-cover'
+										src={
+											"https://d2kukao61u3x53.cloudfront.net/home-hero/headshots.jpg"
+										}
+										width={500}
+										height={500}
+									/>
+									<h1 className='py-6 text-xl'>Headshots</h1>
+								</Link>
+							</div>
+						</div>
+						<div className='flex w-full flex-1 items-center justify-center '>
+							<div className='w-full'>
+								<Link href={"/estate"}>
+									<Image
+										alt='An interior design photo of a couch'
+										className='h-96 w-full object-cover'
+										src={
+											"https://d2kukao61u3x53.cloudfront.net/home-hero/interior.jpg"
+										}
+										width={500}
+										height={500}
+									/>
+									<h1 className='py-6 text-xl'>Real Estate</h1>
+								</Link>
+							</div>
+						</div>
+						<div className='flex w-full flex-1 items-center justify-center'>
+							<div className='w-full'>
+								<Link href={"/events"}>
+									<Image
+										alt='Portrait of a married couple'
+										className='h-96 w-full object-cover'
+										src={
+											"https://d2kukao61u3x53.cloudfront.net/home-hero/events.jpg"
+										}
+										width={500}
+										height={500}
+									/>
+									<h1 className='py-6 text-xl'>Events</h1>
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section className='my-4 flex flex-col gap-8 bg-gray-50 p-2 md:px-8 lg:flex-row lg:p-12'>
+				<div className=' relative flex w-full flex-1'>
+					<Image
+						className='object-cover'
+						alt='picture of aerys'
+						src={"https://d2kukao61u3x53.cloudfront.net/home-hero/aerys.jpg"}
+						fill
+					></Image>
+				</div>
+				<div className=' flex flex-1 flex-col items-center justify-center'>
+					<h1 className='p-4 text-3xl font-bold'>About</h1>
+					<p className='pb-4'>
+						Aerys has dedicated his life to capturing the essence of life in all
+						its forms. He believes that photography is not just about taking
+						pictures, but it is a way of telling stories and expressing
+						emotions.
+					</p>
+					<p className='pb-4'>
+						His work ranges from capturing the magnificence of nature to the
+						simplicity of everyday life. He aims to transport his clients to the
+						moment of the photograph, making them feel the same emotions that
+						they did when they took the shot.
+					</p>
+					<p className='pb-4'>
+						With years of experience in photography, He has developed a unique
+						style, which focuses on natural light, vibrant colours, and raw
+						emotions. He believes that the best moments happen when people are
+						at ease and are comfortable being themselves, which is why he
+						strives to create a relaxed and friendly environment during his
+						photoshoots.
+					</p>
+					<p className='pb-4'>
+						His photography services include portrait photography, event
+						photography, Real Estate and Interior photography, and much more. He
+						also offers customized packages to cater to your specific needs and
+						requirements.
+					</p>
+					<p>
+						He is committed to providing his clients with the highest quality of
+						service, and take pride in the fact that his work has been
+						recognized and appreciated by many.
+					</p>
+					<p>
+						Thank you for visiting his website, and he hopes that you enjoy
+						browsing through his galleries as much as he enjoyed creating them.
+						If you have any questions or would like to schedule a photoshoot,
+						please do not hesitate to contact.
+					</p>
+				</div>
+			</section>
+			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:flex-row lg:px-4'>
+				<div>
+					<h1>Some image gallery</h1>
+				</div>
+			</section>
+			<section className='my-4 flex w-full flex-col gap-2 overflow-hidden p-2 md:px-8 lg:px-4 lg:py-12'>
+				<div className='flex flex-col items-center'>
+					<h1 className='text-bold pb-6 text-center text-5xl'>Testimonials</h1>
+					<h1>Testimonials goes here</h1>
+				</div>
+			</section>
+			<section className='my-4 flex flex-col gap-2 bg-gray-50 p-2 md:px-8 lg:flex-row lg:px-4'>
+				<div className='flex w-full flex-col items-center justify-center gap-24 text-center lg:flex-1'>
+					<h1 className='pb-4'>Have any questions or want to book?</h1>
+					<h1 className='pb-4 text-3xl'>I would love to help</h1>
+					<p className='pb-4'>
+						Although Aerys is based in Toronto, he travels all across Canada to
+						cities such as Montreal, Vancouver etc for your photo and film needs
+					</p>
+				</div>
+				<div className='mt-4 flex w-full flex-col items-center justify-center px-4 lg:mt-0 lg:flex-1'>
+					<h1>Form may go here</h1>
+				</div>
+			</section>
+		</main>
+	);
 }
