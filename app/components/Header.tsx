@@ -18,7 +18,11 @@ export default function Header() {
 			<div className='flex items-center justify-between lg:hidden'>
 				<div className='flex items-center bg-white'>
 					<Link href='/'>
-						<Image alt='logo' className='w-24 h-24 md:h-32 md:w-32 object-cover' src={logo} />
+						<Image
+							alt='logo'
+							className='w-24 h-24 md:h-32 md:w-32 object-cover'
+							src={logo}
+						/>
 					</Link>
 				</div>
 				{/* primary mobile nav */}
@@ -62,13 +66,13 @@ export default function Header() {
 					<Link href='/events' className='block'>
 						Events
 					</Link>
-					<Link href='/rates' className='block'>
-						Rates
-					</Link>
 				</div>
 				{/* secondary nav */}
 				<div className='flex items-center'>
-					<Link href='https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0' className='block bg-black px-4 py-2 text-white'>
+					<Link
+						href='https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0'
+						className='block bg-black px-4 py-2 text-white'
+					>
 						Book Now
 					</Link>
 				</div>
@@ -96,9 +100,6 @@ export default function Header() {
 					</Link>
 					<Link onClick={handleClick} className='p-4' href='/events'>
 						Events
-					</Link>
-					<Link onClick={handleClick} className='p-4' href='/rates'>
-						Rates
 					</Link>
 				</ul>
 			</div>

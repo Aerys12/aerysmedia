@@ -19,9 +19,6 @@ export default function Footer() {
 				<Link className='pb-2' href='/events'>
 					Events
 				</Link>
-				<Link className='pb-2' href='/rates'>
-					Rates
-				</Link>
 			</ul>
 			<p className='text-center text-xs p-2 text-gray-500'>
 				Copyright © 2023 Aerys Media. All rights reserved
