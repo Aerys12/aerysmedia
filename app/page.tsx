@@ -137,7 +137,7 @@ export default async function Home() {
 			<section className='my-4 flex w-full flex-col gap-2 overflow-hidden p-2 md:px-8 lg:px-4 lg:py-12'>
 				<div className='flex flex-col items-center'>
 					<h1 className='text-bold pb-6 text-center text-5xl'>Testimonials</h1>
-					<Testimonials />
+					<h1>Testimonails may go here</h1>
 				</div>
 			</section>
 			<section className='my-4 flex flex-col gap-2 bg-gray-50 p-2 md:px-8 lg:flex-row lg:px-4'>
