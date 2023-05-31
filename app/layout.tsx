@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${montserrat.className} w-full text-sm md:text-lg`}>
+			<body
+				className={`${montserrat.className} w-full text-sm md:text-lg bg-white`}
+			>
 				<Header />
 
 				{children}
