@@ -9,6 +9,35 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 export default class SimpleSlider extends Component {
 	render() {
+		const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+			<button
+				{...props}
+				className={
+					"slick-prev slick-arrow" +
+					(currentSlide === 0 ? " slick-disabled" : "")
+				}
+				aria-hidden='true'
+				aria-disabled={currentSlide === 0 ? true : false}
+				type='button'
+			>
+				<MdArrowBackIos />
+			</button>
+		);
+		const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+			<button
+				{...props}
+				className={
+					"slick-next slick-arrow" +
+					(currentSlide === slideCount - 1 ? " slick-disabled" : "")
+				}
+				aria-hidden='true'
+				aria-disabled={currentSlide === slideCount - 1 ? true : false}
+				type='button'
+			>
+				<MdArrowForwardIos />
+			</button>
+		);
+
 		const settings = {
 			dots: true,
 			fade: true,
@@ -19,16 +48,8 @@ export default class SimpleSlider extends Component {
 			pauseOnHover: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			prevArrow: (
-				<button type='button' className='slick-prev'>
-					<MdArrowBackIos />
-				</button>
-			),
-			nextArrow: (
-				<button type='button' className='slick-next'>
-					<MdArrowForwardIos />
-				</button>
-			),
+			prevArrow: <SlickArrowLeft />,
+			nextArrow: <SlickArrowRight />,
 		};
 		return (
 			<div className='w-full p-4 md:mx-auto md:w-full md:max-w-6xl'>
