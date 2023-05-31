@@ -1,7 +1,6 @@
 //"use client";
 import Link from "next/link";
 import Image from "next/image";
-import Testimonials from "./components/Testimonials";
 
 export default async function Home() {
 	return (
