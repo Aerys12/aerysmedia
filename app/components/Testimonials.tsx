@@ -2,14 +2,14 @@
 import Image from "next/image";
 import aerys from "../../public/_MG_6363.jpg";
 import React, { Component } from "react";
-import Slider from "react-slick";
+import Slider, { CustomArrowProps } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { FaQuoteLeft } from "react-icons/fa";
 
 export default class SimpleSlider extends Component {
 	render() {
-		const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+		const SlickArrowLeft = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
 			<button
 				{...props}
 				className={
@@ -23,7 +23,7 @@ export default class SimpleSlider extends Component {
 				<MdArrowBackIos />
 			</button>
 		);
-		const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+		const SlickArrowRight = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
 			<button
 				{...props}
 				className={
