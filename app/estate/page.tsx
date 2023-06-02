@@ -1,11 +1,9 @@
 import Image from "next/image";
-import Gallery from "../components/Gallery";
+//import Gallery from "../components/Gallery";
 import Link from "next/link";
-import { prisma } from "../db";
+//import { prisma } from "../db";
 
 export default async function Estate() {
-	const images = await getData();
-
 	return (
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-7xl'>
 			<div className='flex flex-col items-center justify-center px-2 pb-4 md:px-8'>
@@ -32,20 +30,6 @@ export default async function Estate() {
 					</Link>
 				</div>
 			</div>
-
-			<section>
-				<Gallery images={images} />
-			</section>
 		</main>
 	);
-}
-
-async function getData() {
-	const images = await prisma?.image.findMany({
-		where: {
-			galleryName: "couples",
-		},
-	});
-
-	return images;
 }
