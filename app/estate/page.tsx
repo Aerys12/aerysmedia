@@ -46,7 +46,6 @@ async function getData() {
 			galleryName: "couples",
 		},
 	});
-	console.log(images);
 
 	return images;
 }
