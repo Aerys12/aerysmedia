@@ -1,7 +1,4 @@
-import Image from "next/image";
-//import Gallery from "../components/Gallery";
 import Link from "next/link";
-//import { prisma } from "../db";
 
 export default async function Estate() {
 	return (
