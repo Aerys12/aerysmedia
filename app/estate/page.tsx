@@ -8,8 +8,8 @@ export default async function Estate() {
 				<p className='text-center'>
 					Welcome to my portrait photography page! I specialize in capturing the
 					unique essence of each person I photograph, creating images that truly
-					reflect their personality and style. Let's work together to tell your
-					story through my lens.
+					reflect their personality and style. work together to tell your story
+					through my lens.
 				</p>
 			</div>
 		</div>
