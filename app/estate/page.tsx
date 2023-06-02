@@ -11,7 +11,7 @@ export default async function Estate() {
 				<h1 className='p-4 text-4xl'>Real Estate and Interior Photography</h1>
 				<p className='text-center'>
 					Welcome to my real estate and interior photography page! I have a
-					passion for showcasing properties in their best light. Whether you're
+					passion for showcasing properties in their best light. Whether you are
 					a real estate agent or homeowner, I can provide stunning images that
 					will make your property stand out. Let us work together to create
 					images that will make your space shine.
