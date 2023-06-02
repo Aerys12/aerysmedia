@@ -15,13 +15,13 @@ export default async function Estate() {
 				<div className='flex w-full items-center justify-center px-2 py-2 md:gap-4 md:px-8 md:py-4'>
 					<Link
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='/contact'
+						href='/'
 					>
 						BOOK YOUR SESSION
 					</Link>
 					<Link
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='/contact'
+						href='/'
 					>
 						EMAIL US A QUESTION
 					</Link>
