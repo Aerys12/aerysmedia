@@ -3,7 +3,7 @@ import Gallery from "../components/Gallery";
 import Link from "next/link";
 import { prisma } from "../db";
 
-export default async function () {
+export default async function Estate() {
 	const images = await getData();
 
 	return (
