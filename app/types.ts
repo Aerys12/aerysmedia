@@ -13,3 +13,9 @@ export type portraitInfo = {
         slug: string
     }
 };
+
+export type headshotInfo = {
+	params: {
+		slug: string
+	}
+}
