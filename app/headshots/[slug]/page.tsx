@@ -15,10 +15,10 @@ export default async function Headshot({ params }: headshotInfo) {
 						Welcome to my {params.slug} Headshots page! I specialize in creating
 						headshots that showcase your unique personality and professionalism
 						for a variety of purposes, including LinkedIn, personal branding,
-						and more. Whether you're an actor, entrepreneur, or working
+						and more. Whether you are an actor, entrepreneur, or working
 						professional, I work closely with you to create headshots that
 						capture your individuality and make you stand out from the crowd.
-						Let's work together to create images that will help you achieve your
+						Let us work together to create images that will help you achieve your
 						goals
 					</p>
 				</div>

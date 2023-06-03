@@ -14,9 +14,9 @@ export default async function Headshots() {
 					Welcome to my headshots photography page! I specialize in creating
 					headshots that showcase your unique personality and professionalism
 					for a variety of purposes, including LinkedIn, personal branding, and
-					more. Whether you're an actor, entrepreneur, or working professional,
+					more. Whether you are an actor, entrepreneur, or working professional,
 					I work closely with you to create headshots that capture your
-					individuality and make you stand out from the crowd. Let's work
+					individuality and make you stand out from the crowd. Let us work
 					together to create images that will help you achieve your goals
 				</p>
 				<div className='flex w-full items-center justify-center px-2 py-2 md:gap-4 md:px-8 md:py-4'>
