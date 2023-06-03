@@ -11,7 +11,11 @@ export default class SimpleSlider extends Component {
 	render() {
 		18;
 
-		const SlickArrowLeft = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
+		const SlickArrowLeft = ({
+			currentSlide,
+			slideCount,
+			...props
+		}: CustomArrowProps) => (
 			<button
 				{...props}
 				className={
@@ -25,15 +29,19 @@ export default class SimpleSlider extends Component {
 				<MdArrowBackIos />
 			</button>
 		);
-		const SlickArrowRight = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
+		const SlickArrowRight = ({
+			currentSlide,
+			slideCount,
+			...props
+		}: CustomArrowProps) => (
 			<button
 				{...props}
 				className={
 					"slick-next slick-arrow" +
-					(currentSlide === slideCount - 1 ? " slick-disabled" : "")
+					(currentSlide === (slideCount ?? 0) - 1 ? " slick-disabled" : "")
 				}
 				aria-hidden='true'
-				aria-disabled={currentSlide === slideCount - 1 ? true : false}
+				aria-disabled={currentSlide === (slideCount ?? 0) - 1 ? true : false}
 				type='button'
 			>
 				<MdArrowForwardIos />
