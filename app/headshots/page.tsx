@@ -41,9 +41,11 @@ export default async function Headshots() {
 				>
 					<div className='flex w-full'>
 						<Image
-							src={'https://d2kukao61u3x53.cloudfront.net/headshots-hero/actor.jpg'}
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/headshots-hero/actor.jpg"
+							}
 							className='h-64 w-full object-cover'
-							alt='this is a portrait'
+							alt='actors headshot'
 							width={500}
 							height={500}
 						/>
@@ -57,8 +59,10 @@ export default async function Headshots() {
 					<div className='flex w-full flex-1'>
 						<Image
 							className='h-64 w-full object-cover'
-							src={'https://d2kukao61u3x53.cloudfront.net/headshots-hero/corporate.jpg'}
-							alt='this is a portrait'
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/headshots-hero/corporate.jpg"
+							}
+							alt='corporate headshot'
 							width={500}
 							height={500}
 						/>
@@ -66,19 +70,21 @@ export default async function Headshots() {
 					<h1 className='py-6 text-xl'>Corporate</h1>
 				</Link>
 				<Link
-					href='/headshots/Branding'
+					href='/headshots/LinkedIn'
 					className='flex flex-col items-center justify-center'
 				>
 					<div className='flex w-full flex-1'>
 						<Image
 							className='h-64 w-full object-cover'
-							src={'https://d2kukao61u3x53.cloudfront.net/headshots-hero/branding.jpg'}
-							alt='this is a portrait'
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/headshots-hero/branding.jpg"
+							}
+							alt='linkedin headshot'
 							width={500}
 							height={500}
 						/>
 					</div>
-					<h1 className='py-6 text-xl'>Branding</h1>
+					<h1 className='py-6 text-xl'>LinkedIn</h1>
 				</Link>
 			</section>
 

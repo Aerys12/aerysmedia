@@ -19,3 +19,9 @@ export type headshotInfo = {
 		slug: string
 	}
 }
+
+export type eventsInfo = {
+	params: {
+		slug: string
+	}
+}

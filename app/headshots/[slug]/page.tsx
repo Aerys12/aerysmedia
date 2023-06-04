@@ -1,6 +1,5 @@
 import Gallery from "../../components/Gallery";
 import { headshotInfo } from "@/app/types";
-import Image from "next/image";
 import Link from "next/link";
 import { prisma } from "../../db";
 
