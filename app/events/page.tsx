@@ -8,7 +8,7 @@ export default async function Events() {
 	return (
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-7xl'>
 			<div className='flex flex-col items-center justify-center px-2 pb-4 md:px-8'>
-				<h1 className='p-4 text-4xl'>Events Photography</h1>
+				<h1 className='p-4 text-4xl text-center'>Events Photography</h1>
 				<p className='text-center'>
 					Welcome to my events photography page! I specialize in capturing the
 					essence and excitement of every event I photograph. From corporate

@@ -9,7 +9,7 @@ export default async function Event({ params }: eventsInfo) {
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-7xl'>
 			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:px-4'>
 				<div className='flex flex-col items-center justify-center pb-4'>
-					<h1 className='p-4 text-4xl'>{params.slug} Events</h1>
+					<h1 className='p-4 text-4xl text-center'>{params.slug} Events</h1>
 					<p className='text-center'>
 						Welcome to my {params.slug} events page! I specialize in capturing
 						the essence and excitement of every event I photograph. From

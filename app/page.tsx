@@ -6,12 +6,12 @@ import Testimonials from "./components/Testimonials";
 export default async function Home() {
 	return (
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-6xl'>
-			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:flex-row lg:px-4'>
+			<section className='my-4 flex flex-col gap-8 p-2 md:px-2 lg:px-0 lg:flex-row'>
 				<div className='text-center'>
 					<h1 className='pb-4 text-center  text-4xl md:text-7xl'>
 						BEAUTIFUL MOMENTS ARE EVERYTHING
 					</h1>
-					<div className='flex flex-col items-center justify-between gap-8 md:flex-row'>
+					<div className='flex flex-col items-center justify-between gap-8 lg:flex-row'>
 						<div className='flex w-full flex-1 items-center justify-center'>
 							<div className='w-full'>
 								<Link href={"/portraits"}>
@@ -79,13 +79,14 @@ export default async function Home() {
 					</div>
 				</div>
 			</section>
-			<section className='bg-slate-50 my-4 flex flex-col gap-8 p-2 md:px-8 lg:flex-row lg:p-12'>
+			<section className='bg-slate-50 my-4 flex flex-col gap-8 p-2 md:px-2 lg:flex-row lg:p-12'>
 				<div className=' relative flex w-full flex-1'>
 					<Image
-						className='object-cover'
+						className='object-cover w-full'
 						alt='picture of aerys'
 						src={"https://d2kukao61u3x53.cloudfront.net/home-hero/aerys.jpg"}
-						fill
+						width={500}
+						height={500}
 					></Image>
 				</div>
 				<div className=' flex flex-1 flex-col items-center justify-center'>
@@ -134,7 +135,7 @@ export default async function Home() {
 					<h1>Some image gallery</h1>
 				</div>
 			</section>
-			<section className='bg-slate-50 my-4 flex w-full flex-col gap-2 overflow-hidden p-2 md:px-8 lg:px-4 lg:py-12'>
+			<section className='bg-slate-50 my-4 flex w-full flex-col py-8 gap-2 overflow-hidden md:px-2 lg:px-4 lg:py-12'>
 				<div className='flex flex-col items-center'>
 					<h1 className='text-bold pb-6 text-center text-5xl'>Testimonials</h1>
 					<Testimonials />

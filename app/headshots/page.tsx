@@ -9,7 +9,7 @@ export default async function Headshots() {
 	return (
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-7xl'>
 			<div className='flex flex-col items-center justify-center px-2 pb-4 md:px-8'>
-				<h1 className='p-4 text-4xl'>Headshot Photography</h1>
+				<h1 className='p-4 text-4xl text-center'>Headshot Photography</h1>
 				<p className='text-center'>
 					Welcome to my headshots photography page! I specialize in creating
 					headshots that showcase your unique personality and professionalism
@@ -24,7 +24,7 @@ export default async function Headshots() {
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
 						href='/contact'
 					>
-						BOOK YOUR HEADSHOT SESSION
+						BOOK YOUR SESSION
 					</Link>
 					<Link
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'

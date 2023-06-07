@@ -9,7 +9,7 @@ export default async function Headshot({ params }: headshotInfo) {
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-7xl'>
 			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:px-4'>
 				<div className='flex flex-col items-center justify-center pb-4'>
-					<h1 className='p-4 text-4xl'>{params.slug} Headshots</h1>
+					<h1 className='p-4 text-4xl text-center'>{params.slug} Headshots</h1>
 					<p className='text-center'>
 						Welcome to my {params.slug} Headshots page! I specialize in creating
 						headshots that showcase your unique personality and professionalism
@@ -17,8 +17,8 @@ export default async function Headshot({ params }: headshotInfo) {
 						and more. Whether you are an actor, entrepreneur, or working
 						professional, I work closely with you to create headshots that
 						capture your individuality and make you stand out from the crowd.
-						Let us work together to create images that will help you achieve your
-						goals
+						Let us work together to create images that will help you achieve
+						your goals
 					</p>
 				</div>
 				<div className='flex w-full items-center justify-center px-2 py-2 md:gap-4 md:px-8 md:py-4'>
@@ -26,7 +26,7 @@ export default async function Headshot({ params }: headshotInfo) {
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
 						href='/contact'
 					>
-						BOOK YOUR HEADSHOT SESSION
+						BOOK YOUR SESSION
 					</Link>
 					<Link
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'

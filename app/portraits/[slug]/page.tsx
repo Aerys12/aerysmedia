@@ -10,7 +10,7 @@ export default async function Portrait({ params }: portraitInfo) {
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-7xl'>
 			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:px-4'>
 				<div className='flex flex-col items-center justify-center pb-4'>
-					<h1 className='p-4 text-4xl'>{params.slug} Portraits</h1>
+					<h1 className='p-4 text-4xl text-center'>{params.slug} Portraits</h1>
 					<p className='text-center'>
 						Welcome to my {params.slug} portraits page! I specialize in
 						capturing the unique essence of each person I photograph, creating

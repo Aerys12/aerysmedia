@@ -8,7 +8,7 @@ export default async function Engagements() {
 		<main className='mx-auto flex w-full flex-col items-center justify-center lg:max-w-7xl'>
 			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:px-4'>
 				<div className='flex flex-col items-center justify-center pb-4'>
-					<h1 className='p-4 text-4xl'>Engagement Events</h1>
+					<h1 className='p-4 text-4xl text-center'>Engagement Events</h1>
 					<p className='text-center'>
 						As an engagement photographer, I capture the joy and intimacy of
 						this special moment with natural shots that reflect your
@@ -20,7 +20,7 @@ export default async function Engagements() {
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
 						href='/contact'
 					>
-						BOOK YOUR EVENT
+						BOOK YOUR SESSION
 					</Link>
 					<Link
 						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
