@@ -107,7 +107,9 @@ export default async function Events() {
 					<div className='flex w-full flex-1 object-cover'>
 						<Image
 							className='h-64 w-full object-cover'
-							src={"https://d2kukao61u3x53.cloudfront.net/events-hero/grad.jpg"}
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/events-hero/showers.jpg"
+							}
 							alt='a baby shower photo'
 							width={500}
 							height={500}
@@ -139,7 +141,6 @@ export default async function Events() {
 	);
 }
 
-
 async function getData() {
 	const images = await prisma?.image.findMany({
 		where: {
@@ -149,4 +150,3 @@ async function getData() {
 
 	return images;
 }
-
