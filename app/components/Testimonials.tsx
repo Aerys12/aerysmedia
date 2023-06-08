@@ -95,7 +95,9 @@ export default class SimpleSlider extends Component {
 							<Image
 								className='flex-1 mb-4 rounded-full object-cover'
 								alt='image slider'
-								src={aerys}
+								src={
+									"https://d2kukao61u3x53.cloudfront.net/headshots-hero/branding.jpg"
+								}
 								width={96}
 								height={96}
 							/>
@@ -146,7 +148,9 @@ export default class SimpleSlider extends Component {
 							<Image
 								className='flex-1 mb-4 rounded-full object-cover'
 								alt='image slider'
-								src={aerys}
+								src={
+									"https://d2kukao61u3x53.cloudfront.net/home-hero/portraits.jpg"
+								}
 								width={96}
 								height={96}
 							/>
@@ -171,7 +175,9 @@ export default class SimpleSlider extends Component {
 							<Image
 								className='flex-1 mb-4 rounded-full object-cover'
 								alt='image slider'
-								src={aerys}
+								src={
+									"https://d2kukao61u3x53.cloudfront.net/home-hero/headshots.jpg"
+								}
 								width={96}
 								height={96}
 							/>
@@ -196,7 +202,7 @@ export default class SimpleSlider extends Component {
 							<Image
 								className='flex-1 mb-4 rounded-full object-cover'
 								alt='image slider'
-								src={aerys}
+								src={"https://d2kukao61u3x53.cloudfront.net/portraits/_MG_4937.jpg"}
 								width={96}
 								height={96}
 							/>
