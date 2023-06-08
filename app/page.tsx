@@ -130,10 +130,71 @@ export default async function Home() {
 					</p>
 				</div>
 			</section>
-			<section className='my-4 flex flex-col gap-8 p-2 md:px-8 lg:flex-row lg:px-4'>
-				<div>
-					<h1>Some image gallery</h1>
-				</div>
+			<section className='my-4 md:my-10 grid h-1/4 w-full grid-cols-2 gap-4 lg:gap-12 p-2 lg:grid-cols-4 md:px-2 lg:px-0'>
+				<Link
+					className='flex w-full flex-col items-center justify-center'
+					href='/portraits/Couples'
+				>
+					<div className='flex h-64 w-full'>
+						<Image
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/portraits-hero/couple.jpg"
+							}
+							className='h-64 w-full object-cover'
+							alt='this is a portrait'
+							width={500}
+							height={500}
+						/>
+					</div>
+				</Link>
+				<Link
+					href='/headshots/LinkedIn'
+					className='flex flex-col items-center justify-center'
+				>
+					<div className='flex w-full flex-1'>
+						<Image
+							className='h-64 w-full object-cover'
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/headshots-hero/branding.jpg"
+							}
+							alt='linkedin headshot'
+							width={500}
+							height={500}
+						/>
+					</div>
+				</Link>
+				<Link
+					href='/events/engagements'
+					className='flex flex-col items-center justify-center'
+				>
+					<div className='flex w-full flex-1'>
+						<Image
+							className='h-64 w-full object-cover'
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/events-hero/engagement.jpg"
+							}
+							alt='an engagement photo'
+							width={500}
+							height={500}
+						/>
+					</div>
+				</Link>
+				<Link
+					className='flex w-full flex-col items-center justify-center'
+					href='/portraits/Family'
+				>
+					<div className='flex w-full flex-1 object-cover'>
+						<Image
+							className='h-64 w-full object-cover'
+							src={
+								"https://d2kukao61u3x53.cloudfront.net/portraits-hero/family.jpg"
+							}
+							alt='this is a portrait'
+							width={500}
+							height={500}
+						/>
+					</div>
+				</Link>
 			</section>
 			<section className='bg-slate-50 my-4 flex w-full flex-col py-8 gap-2 overflow-hidden md:px-2 lg:px-4 lg:py-12'>
 				<div className='flex flex-col items-center'>
