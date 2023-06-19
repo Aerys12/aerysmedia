@@ -135,7 +135,7 @@ export default async function Home() {
 					className='flex w-full flex-col items-center justify-center'
 					href='/portraits/Couples'
 				>
-					<div className='flex h-64 w-full'>
+					<div className='flex w-full flex-1'>
 						<Image
 							src={
 								"https://d2kukao61u3x53.cloudfront.net/portraits-hero/couple.jpg"
