@@ -65,7 +65,7 @@ export default async function Home() {
 								<Link href={"/events"}>
 									<Image
 										alt='Portrait of a married couple'
-										className='h-96 w-full object-cover'
+										className='h-96 w-full object-cover p-0'
 										src={
 											"https://d2kukao61u3x53.cloudfront.net/home-hero/events.jpg"
 										}
@@ -140,7 +140,7 @@ export default async function Home() {
 							src={
 								"https://d2kukao61u3x53.cloudfront.net/portraits-hero/couple.jpg"
 							}
-							className='h-64 w-full object-cover'
+							className='h-64 w-full object-cover p-0'
 							alt='this is a portrait'
 							width={500}
 							height={500}
@@ -153,7 +153,7 @@ export default async function Home() {
 				>
 					<div className='flex w-full flex-1'>
 						<Image
-							className='h-64 w-full object-cover'
+							className='h-64 w-full object-cover p-0'
 							src={
 								"https://d2kukao61u3x53.cloudfront.net/headshots-hero/branding.jpg"
 							}
@@ -169,7 +169,7 @@ export default async function Home() {
 				>
 					<div className='flex w-full flex-1'>
 						<Image
-							className='h-64 w-full object-cover'
+							className='h-64 w-full object-cover p-0'
 							src={
 								"https://d2kukao61u3x53.cloudfront.net/events-hero/engagement.jpg"
 							}
@@ -185,7 +185,7 @@ export default async function Home() {
 				>
 					<div className='flex w-full flex-1 object-cover'>
 						<Image
-							className='h-64 w-full object-cover'
+							className='h-64 w-full object-cover p-0'
 							src={
 								"https://d2kukao61u3x53.cloudfront.net/portraits-hero/family.jpg"
 							}
