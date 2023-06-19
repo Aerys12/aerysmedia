@@ -130,7 +130,7 @@ export default async function Home() {
 					</p>
 				</div>
 			</section>
-			<section className='md:my-10 grid h-1/4 w-full grid-cols-2 gap-4 lg:gap-12 p-2 lg:grid-cols-4 md:px-2 lg:px-0'>
+			<section className='my-4 md:my-10 grid h-1/4 w-full grid-cols-2 gap-2 md:gap-4 lg:gap-12 p-2 lg:grid-cols-4 md:px-2 lg:px-0'>
 				<Link
 					className='flex w-full flex-col items-center justify-center'
 					href='/portraits/Couples'
