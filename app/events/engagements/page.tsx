@@ -1,6 +1,7 @@
 import Gallery from "../../components/Gallery";
 import Link from "next/link";
 import { prisma } from "../../db";
+import BookNow from "@/app/components/BookNow";
 
 export default async function Engagements() {
 	const images = await getData();
@@ -15,20 +16,7 @@ export default async function Engagements() {
 						personalities and style. Let me help you preserve your love story.
 					</p>
 				</div>
-				<div className='flex w-full items-center justify-center px-2 py-2 md:gap-4 md:px-8 md:py-4'>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='/contact'
-					>
-						BOOK YOUR SESSION
-					</Link>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='/contact'
-					>
-						EMAIL US A QUESTION
-					</Link>
-				</div>
+				<BookNow />
 			</section>
 
 			<section className='my-4 flex flex-col gap-2 p-2 md:px-8 lg:px-4'>

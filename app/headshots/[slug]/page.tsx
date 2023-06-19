@@ -2,6 +2,7 @@ import Gallery from "../../components/Gallery";
 import { headshotInfo } from "@/app/types";
 import Link from "next/link";
 import { prisma } from "../../db";
+import BookNow from "@/app/components/BookNow";
 
 export default async function Headshot({ params }: headshotInfo) {
 	const images = await getData(params.slug);
@@ -21,20 +22,7 @@ export default async function Headshot({ params }: headshotInfo) {
 						your goals
 					</p>
 				</div>
-				<div className='flex w-full items-center justify-center px-2 py-2 md:gap-4 md:px-8 md:py-4'>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='/contact'
-					>
-						BOOK YOUR SESSION
-					</Link>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='/contact'
-					>
-						EMAIL US A QUESTION
-					</Link>
-				</div>
+				<BookNow />
 			</section>
 			<section className='my-4 flex flex-col gap-2 p-2 md:px-8 lg:px-4'>
 				<Gallery images={images} />

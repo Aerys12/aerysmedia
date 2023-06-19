@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Gallery from "../components/Gallery";
 import { prisma } from "../db";
+import BookNow from "../components/BookNow";
 
 export default async function Estate() {
 	const images = await getData();
@@ -16,20 +17,7 @@ export default async function Estate() {
 					will make your property stand out. Let us work together to create
 					images that will make your space shine.
 				</p>
-				<div className='flex w-full items-center justify-center px-2 py-2 md:gap-4 md:px-8 md:py-4'>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0'
-					>
-						BOOK YOUR SESSION
-					</Link>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0'
-					>
-						EMAIL US A QUESTION
-					</Link>
-				</div>
+				<BookNow />
 			</div>
 
 			<section>

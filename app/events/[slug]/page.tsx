@@ -2,6 +2,7 @@ import Gallery from "../../components/Gallery";
 import { eventsInfo } from "@/app/types";
 import Link from "next/link";
 import { prisma } from "../../db";
+import BookNow from "@/app/components/BookNow";
 
 export default async function Event({ params }: eventsInfo) {
 	const images = await getData(params.slug);
@@ -18,6 +19,7 @@ export default async function Event({ params }: eventsInfo) {
 						memories last a lifetime.
 					</p>
 				</div>
+				<BookNow />
 			</section>
 			<section className='my-4 flex flex-col gap-2 p-2 md:px-8 lg:px-4'>
 				<Gallery images={images} />

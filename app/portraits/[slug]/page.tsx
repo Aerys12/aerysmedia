@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { prisma } from "../../db";
 import { portraitInfo } from "@/app/types";
+import BookNow from "@/app/components/BookNow";
 
 export default async function Portrait({ params }: portraitInfo) {
 	const images = await getData(params.slug);
@@ -18,20 +19,7 @@ export default async function Portrait({ params }: portraitInfo) {
 						together to tell your story through my lens.
 					</p>
 				</div>
-				<div className='flex w-full items-center justify-center px-2 py-2 md:gap-4 md:px-8 md:py-4'>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0'
-					>
-						BOOK YOUR PORTRAIT SESSION
-					</Link>
-					<Link
-						className='flex flex-1 items-center justify-center text-center underline underline-offset-8'
-						href='https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0'
-					>
-						EMAIL US A QUESTION
-					</Link>
-				</div>
+				<BookNow />
 			</section>
 			<section className='my-4 flex flex-col gap-2 p-2 md:px-8 lg:px-4'>
 				<Gallery images={images} />
