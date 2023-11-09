@@ -29,7 +29,13 @@ export default function Header() {
 				<div className='flex items-center gap-4'>
 					<div>
 						<button className='bg-black px-2 py-1 text-white'>
-							<Link href='/https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0'>Book Now</Link>
+							<a
+								href='/https://www.honeybook.com/widget/aerys_media_254499/cf_id/645cfd9df30fa7002f5f0ba0'
+								rel='noopener noreferrer'
+								target='_blank'
+							>
+								Book Now
+							</a>
 						</button>
 					</div>
 					<div
