@@ -4,6 +4,13 @@ import Link from "next/link";
 import { prisma } from "../../db";
 import { portraitInfo } from "@/app/types";
 import BookNow from "@/app/components/BookNow";
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: portraitInfo): Promise<Metadata> {
+	return {
+		title: `${params.slug} Portraits`
+	}
+}
 
 export default async function Portrait({ params }: portraitInfo) {
 	const images = await getData(params.slug);

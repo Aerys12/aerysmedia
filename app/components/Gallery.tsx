@@ -7,7 +7,7 @@ import cn from "classnames";
 export default function Gallery({ images }: GalleryProps) {
 	const [isLoading, setLoading] = useState(true);
 	return (
-		<div className='w-full columns-1 gap-1 space-y-1 px-2 md:columns-2 md:px-8 lg:columns-3'>
+		<div className='w-full columns-1 gap-1 space-y-1 px-2 md:columns-2 md:px-8 lg:px-0 lg:columns-3'>
 			{images?.map((image) => (
 				<div
 					key={image.name}

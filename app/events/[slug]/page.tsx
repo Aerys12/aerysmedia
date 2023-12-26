@@ -3,6 +3,15 @@ import { eventsInfo } from "@/app/types";
 import Link from "next/link";
 import { prisma } from "../../db";
 import BookNow from "@/app/components/BookNow";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+	params,
+}: eventsInfo): Promise<Metadata> {
+	return {
+		title: `${params.slug} Photography`,
+	};
+}
 
 export default async function Event({ params }: eventsInfo) {
 	const images = await getData(params.slug);

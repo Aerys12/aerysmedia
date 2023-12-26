@@ -11,17 +11,20 @@ export type GalleryImage = {
 export type portraitInfo = {
 	params: {
         slug: string
+		description: string
     }
 };
 
 export type headshotInfo = {
 	params: {
 		slug: string
+		description: string
 	}
 }
 
 export type eventsInfo = {
 	params: {
 		slug: string
+		description: string
 	}
 }

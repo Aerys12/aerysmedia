@@ -2,6 +2,12 @@ import Link from "next/link";
 import Gallery from "../components/Gallery";
 import { prisma } from "../db";
 import BookNow from "../components/BookNow";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Real Estate and Interior Design Photography"
+
+}
 
 export default async function Estate() {
 	const images = await getData();

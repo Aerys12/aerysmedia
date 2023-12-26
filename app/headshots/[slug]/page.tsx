@@ -3,6 +3,15 @@ import { headshotInfo } from "@/app/types";
 import Link from "next/link";
 import { prisma } from "../../db";
 import BookNow from "@/app/components/BookNow";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+	params,
+}: headshotInfo): Promise<Metadata> {
+	return {
+		title: `${params.slug} Headshots`,
+	};
+}
 
 export default async function Headshot({ params }: headshotInfo) {
 	const images = await getData(params.slug);

@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { prisma } from "../db";
 import BookNow from "../components/BookNow";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Events Photography"
+
+}
 
 export default async function Events() {
 	const images = await getData();
